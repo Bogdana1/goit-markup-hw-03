@@ -13,27 +13,27 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
+    <header class="header line">
+        <div class="container main-nav">
             <a href="" class="logo">Web<span class="logo-header">Studio</span></a>
             <nav>
                 <ul class="site-nav">
-                    <li>
+                    <li class="item">
                         <a href="./index.html" class="link">Студия</a>
                     </li>
-                    <li>
+                    <li class="item">
                         <a href="./portfolio.html" class="current">Портфолио</a>
                     </li>
-                    <li>
+                    <li class="item">
                         <a href="" class="link">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <ul class="contacts">
-                <li>
+                <li class="item">
                     <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
                 </li>
-                <li>
+                <li class="item">
                     <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
                 </li>
             </ul>
@@ -42,63 +42,84 @@
 
     <main>
         <section class="section">
-            <div class="container">
+            <div class="container portfolio ">
                 <h1 class="invisible-title">Портфолио студии</h1>
-                    <ul class="portfolio">
-                        <li><button type="button" class="button secondary">Все</button></li>
-                        <li><button type="button" class="button secondary">Веб-сайты</button></li>
-                        <li><button type="button" class="button secondary">Приложения</button></li>
-                        <li><button type="button" class="button secondary">Дизайн</button></li>
-                        <li><button type="button" class="button secondary">Маркетинг</button></li>
-                        <li>
-                            <img src="./images/tekhnokriak.jpg" alt="ноутбук, на котором открыт веб-сайт" width="370" height="294">
-                            <h2 class="name">Технокряк</h2>
-                            <p>Веб-сайт</p>
+                    <ul class="button-flex">
+                        <li class="item"><button type="button" class="button secondary">Все</button></li>
+                        <li class="item"><button type="button" class="button secondary">Веб-сайты</button></li>
+                        <li class="item"><button type="button" class="button secondary">Приложения</button></li>
+                        <li class="item"><button type="button" class="button secondary">Дизайн</button></li>
+                        <li class="item"><button type="button" class="button secondary">Маркетинг</button></li>
+                    </ul>
+                    <ul class="projects">
+                        <li class="item">
+                            <img class="image" src="./images/teknokriak.jpg" alt="ноутбук, на котором открыт веб-сайт" width="370" height="294">
+                            <div class="text-block">
+                                <h2 class="name">Технокряк</h2>
+                                <p class="text">Веб-сайт</p>
+                            </div>
                         </li>
-                        <li>
-                            <img src="./images/poster.jpg" alt="два баскетболиста, один пытается отобрать мяч у другого" width="370"
+                        <li class="item">
+                            <img class="image" src="./images/poster.jpg" alt="два баскетболиста, один пытается отобрать мяч у другого" width="370"
                                 height="294">
-                            <h2 class="name">Постер New Orlean vs Golden Star</h2>
-                            <p>Дизайн</p>
+                                <div class="text-block">
+                                <h2 class="name">Постер New Orlean vs Golden Star</h2>
+                                <p class="text">Дизайн</p>
+                            </div>
                         </li>
-                        <li>
-                            <img src="./images/restaurant_seafood.jpg" alt="логотип ресторана" width="370" height="294">
-                            <h2 class="name">Ресторан Seafood</h2>
-                            <p>Приложение</p>
+                        <li class="item">
+                            <img class="image" src="./images/restaurant_seafood.jpg" alt="логотип ресторана" width="370" height="294">
+                            <div class="text-block">
+                                <h2 class="name">Ресторан Seafood</h2>
+                                <p class="text">Приложение</p>
+                            </div>
                         </li>
-                        <li>
-                            <img src="./images/project_prime.jpg" alt="наушники" width="370" height="294">
-                            <h2 class="name">Проект Prime</h2>
-                            <p>Маркетинг</p>
+                        <li class="item">
+                            <img class="image" src="./images/project_prime.jpg" alt="наушники" width="370" height="294">
+                           <div class="text-block">
+                                <h2 class="name">Проект Prime</h2>
+                                <p class="text">Маркетинг</p>
+                            </div>
                         </li>
-                        <li>
-                            <img src="./images/project_boxes.jpg" alt="белая и коричневая коробки" width="370" height="294">
-                            <h2 class="name">Проект Boxes</h2>
-                            <p>Приложение</p>
+                        <li class="item">
+                            <img class="image" src="./images/project_boxes.jpg" alt="белая и коричневая коробки" width="370" height="294">
+                        <div class="text-block">
+                                <h2 class="name">Проект Boxes</h2>
+                                <p class="text">Приложение</p>
+                            </div>
                         </li>
-                        <li>
-                            <img src="./images/inspiration_has_no_borders.jpg" alt="монитор, на котором изображен веб-сайт" width="370"
+                        <li class="item">
+                            <img class="image" src="./images/inspiration_has_no_borders.jpg" alt="монитор, на котором изображен веб-сайт" width="370"
                                 height="294">
-                            <h2 class="name">Inspiration has no Borders</h2>
-                            <p>Веб-сайт</p>
+                        <div class="text-block">
+                                <h2 class="name">Inspiration has no Borders</h2>
+                                <p class="text">Веб-сайт</p>
+                            </div>
                         </li>
-                        <li>
-                            <img src="./images/limited_edition.jpg" alt="открытая книга" width="370" height="294">
-                            <h2 class="name">Издание Limited Edition</h2>
-                            <p>Дизайн</p>
+                        <li class="item">
+                            <img class="image" src="./images/limited_edition.jpg" alt="открытая книга" width="370" height="294">
+                            <div class="text-block">
+                                <h2 class="name">Издание Limited Edition</h2>
+                                <p class="text">Дизайн</p>
+                            </div>
                         </li>
-                        <li>
-                            <img src="./images/project_lab.jpg" alt="белая бирка" width="370" height="294">
-                            <h2 class="name">Проект LAB</h2>
-                            <p>Маркетинг</p>
+                        <li class="item">
+                            <img class="image" src="./images/project_lab.jpg" alt="белая бирка" width="370" height="294">
+                            <div class="text-block">
+                                <h2 class="name">Проект LAB</h2>
+                                <p class="text">Маркетинг</p>
+                            </div>
                         </li>
-                        <li>
-                            <img src="./images/growing_business.jpg" alt="человек открывает приложение на ноутбуке" width="370"
+                        <li class="item">
+                            <img class="image" src="./images/growing_business.jpg" alt="человек открывает приложение на ноутбуке" width="370"
                                 height="294">
-                            <h2 class="name">Growing Business</h2>
-                            <p>Приложение</p>
+                            <div class="text-block">
+                                <h2 class="name">Growing Business</h2>
+                                <p class="text">Приложение</p>
+                            </div>
                         </li>
-                </ul>
+                    </ul>
+                
             </div>
         </section>
             
