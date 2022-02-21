@@ -31,6 +31,8 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -74,13 +76,16 @@ ul {
   display: flex;
   align-items: center;
 }
+
+nav {
+  margin-left: 93px;
+}
 /* site nav */
 
 .site-nav {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 93px;
   padding: 0;
   font-weight: 500;
   font-size: 14px;
@@ -144,6 +149,7 @@ ul {
 /* hero */
 
 .hero {
+  padding: 200px 0;
   background-color: #2f303a;
   text-align: center;
 }
@@ -164,17 +170,9 @@ ul {
 
 /* section */
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0;
-  padding-left: 0;
-  margin-bottom: 0;
 }
 
 .projects .item {
@@ -189,10 +187,6 @@ ul {
 
 .projects .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
-
-.projects .item:nth-child(-n + 3) {
-  margin-top: 50px;
 }
 
 .image {
@@ -219,6 +213,7 @@ ul {
 }
 
 .section {
+  padding: 94px 0;
   background-color: var(--primary-white-color);
 }
 
@@ -237,22 +232,19 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 
-  font-size: 16px;
-  line-height: 1.87;
+  font-size: 14px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
 /* team section */
 
-.team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.team-members {
   background-color: #f5f4fa;
 }
 
 .team {
   display: flex;
-  padding-left: 0;
 }
 
 .team .item + .item {
@@ -291,11 +283,7 @@ ul {
 
 .features {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-left: 0;
+  margin-bottom: 94px;
 }
 
 .features .item {
@@ -325,20 +313,15 @@ ul {
 
 .workflow {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  padding-bottom: 94px;
 }
 
 .workflow .item + .item {
   margin-left: 30px;
 }
 
-/* invisible-title */
-
-.invisible-title {
-  display: none;
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
 
 /* button */
@@ -346,10 +329,11 @@ ul {
 .button {
   font-family: inherit;
   cursor: pointer;
+  border: none;
 }
 
 .button-flex {
-  margin: 0;
+  margin-bottom: 50px;
   display: flex;
   padding-left: 0;
   justify-content: center;
@@ -401,10 +385,13 @@ ul {
   background-color: #2f303a;
 }
 
+.address {
+  margin-top: 20px;
+}
+
 .address-list {
   padding-left: 0;
   margin-bottom: 0;
-  margin-top: 20px;
 }
 
 .address .item + .item {
